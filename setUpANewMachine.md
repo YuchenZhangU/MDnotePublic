@@ -15,6 +15,11 @@ source ~/dotfiles/.vimrc
 
 # tmux
 source ~/.tmux.conf
+
+
+# Or if it is a new machine use install.sh to install
+chmod a+x ./install.sh
+./install.sh
 ```
 
 ## vscode setup
@@ -24,7 +29,11 @@ install extension `Settings Sync` by Shan Khan
 use command `Sync:Update/Upload Settings` to input github token and gist id
 
 GitHub Token: d75f59002ecb4331378a46666158d020d9468b23
+
+`"sync.gist": "2b8054ce57f81c1cfa7e10cc42a92075",`
+
 GitHub Gist: 2b8054ce57f81c1cfa7e10cc42a92075
+
 
 ## install tmux
 
@@ -58,6 +67,7 @@ scp $HOME/.ssh/id_rsa.pub user@server1.cyberciti.biz:~/.ssh/authorized_keys
 
 2. set ssh Remote Forward
 
+Put the following code in ~/.ssh/config
 ```
 Host myRemoteServerName
     HostName 12.34.567.89
@@ -69,6 +79,7 @@ Host myRemoteServerName
 ssh -v myRemoteServerName
 
 3. 
+
 sudo wget -O /usr/local/bin/rcode \
 https://raw.github.com/aurora/rmate/master/rmate
 chmod a+x /usr/local/bin/rcode

@@ -1,0 +1,1 @@
+[pandoc manual](http://pandoc.org/MANUAL.html#creating-a-pdf)
