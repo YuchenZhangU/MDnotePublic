@@ -1,3 +1,7 @@
+[toc]
+
+
+
 ## C
 ### Basic typing
 
@@ -30,13 +34,16 @@ free(p1);
 ```
 
 ### Generate Random Number
-/ C program to generate random numbers
+
+
+
+```c
+
+//Use C program to generate random numbers
 #include <stdio.h>
 #include <stdlib.h>
 #include<time.h>
 
-
-```c
 int main(void)
 {
     // This program will create different sequence of 
