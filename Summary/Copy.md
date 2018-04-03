@@ -1,3 +1,11 @@
+## 3/31/2018 Occam's Razor
+
+> "Entities are not to be multiplied without necessity" - William of Ockham
+
+Originally is a 
+
+**Occam's razor** (also Ockham's razor), is the problem-solving principle that, when presented with competing hypothetical answers to a problem, one should select the one with the fewest assumptions.
+
 
 ## 2/28/2018
 Transform form financial capitalism into more like philanthropy capitalism.
