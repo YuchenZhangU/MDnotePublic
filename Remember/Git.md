@@ -1,9 +1,35 @@
 [toc]
+
 # Git Questions and Cheatsheet
 ## Question
 
 - How to use fork and pull request?
 - If the local repo diverge with remote repo what to do?
+
+## Tips
+
+### Commit Message
+
+Rules
+
+- Seperate subject from body with a blank line
+    + Command like `git shortlog`, `git log --oneline`, `git rebase --interactive`, `git reflog` and git GUI will only capture the subject lines
+- Limit the subject line to 50 characters
+    + If it is not enough, it means you commit too much at a time.
+- Capitalize the subject line
+- Do not end subject line with a period
+- Use the imperative mood in the subject line
+    + If applied, this commit will `msg`
+- Limit the body line to 72 characters
+    + Add issure track link at line 3
+    + Or add `issure trakcing number` and `see also` on the bottom
+- Use the body to explain what and why
+    + `git diff`, `git show` explain how itself
+    + anwser the follow questions
+        * why this change is necessary?
+        * how does it address the issure? (very high level)
+        * what side effects does this change have?
+
 
 ## Cheatsheet
 
@@ -88,7 +114,7 @@ git branch -av # show all local/remote branch and their latest commit info
 ```
 
 
-### Connection
+### Connection With Remote Repo
 
 **remote**
 
@@ -210,8 +236,9 @@ git rebase -i origin/master
 # show insert/delete lines count of each line
 git log --stat 
 
-# see who has done what commit
-git shortlog
+# see who has done what commit (groups each commit by author and displays the first line of each commit message.)
+git shortlog # sort by user name
+git shortlog # sort by number of commit
 
 # graph of all branch with decorate of branch/tag/HEAD
 git log  --all --decorate --oneline --graph
@@ -239,14 +266,14 @@ git log --since="2014-7-1" --until="2014-7-4" # the same as the last command
 git log --author="John\|Mary" # commit by John or Mary. Accept a Regex
 ### git --committer work the similiar way
 
-## By Message
-git log --grep="JRA-224" # Accep a Regex
+## By Commit Message
+git log --grep="JRA-224" # Accept a Regex
 git log --gre="JRA-224" -i # Case insensitive
 
 ## By file
 git log -- foo.py bar.py
 
-## By content
+## By content (Remove or added into a particular line of source code) (This is called a pickaxe)
 git log -S"Hello, World!" # pass in string 
 git log -G"Hello, World!" # pass in regex
 ###  This is a very powerful debugging tool, as it lets you locate all of the commits that affect a particular line of code. It can even show you when a line was copied or moved to another file.
@@ -426,10 +453,122 @@ git filter-branch --prune-empty --subdirectory-filter FOLDER-NAME  BRANCH-NAME
 
 ```
 
-#### Advanced Log
+#### Refs & Reflog
+
+**Methods of referring to a commit**
+
+- Hash (SHA-1) - unique ID for each commit
+- Refs
+    + Branch Name (.git/refs/heads)
+    + Remote/Branch Name (.git/refs/remotes/origin)
+    + tags (.git/refs/tags)
+
+
 ```bash
+# Full ref name vs shortname
+git show refs/heads/master
+git show master
+
+# git gc will move all content of refs/ into .git/packed-refs
+
 # Find all action towards commit including commit, merge, checkout etc. Used to find lost commits
 git reflog
+
+# Resolve a branch, tag, or another indirect reference into the corresponding commit hash
+git rev-parse master
+```
+
+
+**Special Ref**
+
+HEAD
+FETCH_HEAD
+ORIG_HEAD
+MERGE_HEAD
+CHERRY_PICK_HEAD
+
+
+**Symbolic Ref**
+
+HEAD ref can refer to another ref (called symbolic ref):
+`ref: refs/heads/master`
+Or it can refer to a hash when it is at detached HEAD state.
+
+**Refspecs**
+
+Template:
+`[+]<src>:<dst>`
+
+```bash
+# The command pushes the master branch to the origin remote repo like an ordinary git push, but it uses qa-master as the name for the branch in the origin repo. 
+git push origin master:refs/heads/qa-master
+
+# Use either of the following commands to delete a remote branch
+git push origin :some-feature
+git push origin --delete some-feature
+
+
+# example fetch config in .gitconfig
+## by default fetch all
+[remote "origin"]
+ url = https://git@github.com:mary/example-repo.git
+ fetch = +refs/heads/*:refs/remotes/origin/*
+
+## by default only fetch master branchs
+[remote "origin"]
+ url = https://git@github.com:mary/example-repo.git
+ fetch = +refs/heads/master:refs/remotes/origin/master
+ push = refs/heads/master:refs/heads/qa-master
+```
+
+
+**Relative Refs**
+
+First vs second parents:
+The first parent is from the branch that you were on when you performed the merge, and the second parent is from the branch that you passed to the git merge command
+
+![](./img/git_relative_ref.PNG)
+
+```bash
+# Only list commits that are parent of the second parent of a merge commit
+git log HEAD^2
+
+# Remove the last 3 commits from the current branch
+git reset HEAD~3
+
+# Interactively rebase the last 3 commits on the current branch
+git rebase -i HEAD~3
+```
+
+**The Reflog**
+
+Reflog is a chronological history of everything you've done in your local repo.
+
+```bash
+git reflog
+```
+
+```
+ad8621a HEAD@{0}: reset: moving to HEAD~3
+298eb9f HEAD@{1}: commit: Some other commit message
+bbe9012 HEAD@{2}: commit: Continue the feature
+9cb79fa HEAD@{3}: commit: Start a new feature
+```
+
+Checkout a previous record point:
+
+```bash
+# resume the 3 deleted commit, will enter a detached HEAD state
+git checkout HEAD@{1}
+```
+
+#### git blame
+
+```bash
+# pull all the change log of the line 2-3 of file Git.md
+git blame -L 2,3 Git.md
+git blame -L 2,+2 Git.md
+
 ```
 
 ### Git Workflow
