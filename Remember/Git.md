@@ -346,6 +346,9 @@ git stash apply --index
 # drop a specific stash
 git stash drop stash@{2}
 
+# remove all stashes
+git stash clear
+
 # apply and drop
 git stash pop
 
@@ -360,9 +363,8 @@ git stash -u
 # interactively select
 git stash --patch
 
-# apply stash and create a new branch
+# create a new branch, switch to that branch and apply stash
 git stash branch <branch-name>
-
 
 ```
 
@@ -568,6 +570,23 @@ git checkout HEAD@{1}
 # pull all the change log of the line 2-3 of file Git.md
 git blame -L 2,3 Git.md
 git blame -L 2,+2 Git.md
+
+```
+
+#### patch
+
+```bash
+# create a patch
+## find difference between commit 298eb9f and ad8621a and make it a patch
+git diff ad8621a 298eb9f > my.patch
+
+
+## create a sequence of patch
+## compare active commit with ad8621a and create patches for each commit in between and save in folder ./patches
+git format-patch ad8621a -o patches
+
+# apply changes
+git apply my.patch
 
 ```
 
