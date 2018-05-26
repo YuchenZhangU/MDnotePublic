@@ -1,3 +1,8 @@
+## 4/26/2018
+
+You can't hold tide with a broom
+螳臂当车
+
 ## 3/31/2018 Occam's Razor
 
 > "Entities are not to be multiplied without necessity" - William of Ockham
