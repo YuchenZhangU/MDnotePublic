@@ -1,3 +1,11 @@
+## History Match
+
+### Introduction
+
+History matching is an ill-posed problem, the amount of independent data available is much less than the number of variables
+
+
+
 ## Linear Algebra
 
 ### Basic Concept
@@ -13,22 +21,25 @@ $A^T=A^{-1}$
 #### Normal Matrix
 
 $A^{*}A=AA^{*}$
-where $A^{∗}$ is the conjugate transpose of A. That is, a matrix is normal if it commutes with its conjugate transpose.
+where $ A^{*} $ is the conjugate transpose of A. That is, a matrix is normal if it commutes with its conjugate transpose.
 
-A real square matrix A satisfies $A^∗ = A^T$, and is therefore normal if $A^TA = AA^T$.
+A real square matrix A satisfies $A^{*} = A^T$, and is therefore normal if $A^TA = AA^T$.
 
 ### Positive Definite
 
-A symmetric $n \times n$ real matrix $M$ is said to be **positive definite** if the scalar $z^TMz$ is positive for every non-zero column vector $z$ of $n$ real numbers. Here $z^T$ denotes the transpose of $z^T$
+A symmetric $n \times n$ real matrix $M$ is said to be **positive definite** if the scalar $z^TMz$ is positive for every non-zero column vector $z$ of $n$ real numbers. Here $z^T$ denotes the transpose of $z$
 
 The **negative definite**, **positive semi-definite**, and **negative semi-definite** matrices are defined analogously, except that in the last two cases 0's are allowed, i.e. the expression $z^TMz$ is required to be always negative, non-negative, and non-positive, respectively.
 
 #### Features
 
+- All its eigenvalues are positive.
 - For any real invertible matrix $A$ , the product $A^TA$ is a positive definite matrix. A simple proof is that for any non-zero vector $z$, the condition $ z^TA^TAz>0$, since the invertibility of matrix $A$ means that $Az\neq0$.
+- It has a unique Cholesky decomposition
 - The example above shows that a matrix in which some elements are negative may still be positive definite. Conversely, a matrix whose entries are all positive is not necessarily positive definite, as for example
 - Positive Definite Matrix A plus Positive Semi Definite matrix B is Positive Definite
-
+- The Hessian Matrix for a objective function f. 
+If the Hessian is positive definite at x, then f attains an isolated local minimum at x. If the Hessian is negative definite at x, then f attains an isolated local maximum at x. If the Hessian has both positive and negative eigenvalues then x is a saddle point for f. This implies that, at a local minimum (respectively, a local maximum), the Hessian is positive-semi-definite (respectively, negative semi-definite).
 ### Eigendecomposition (spectral decomposition)
 
 $A = VDV^{-1}$

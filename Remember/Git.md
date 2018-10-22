@@ -433,6 +433,8 @@ git clone --recursive <project url>
 
 ```
 
+
+#### Rewire history
 Take an existing subfolder and turn it into an external dependency
 [shrink the size of repo](https://stackoverflow.com/questions/5984428/how-to-delete-the-old-history-after-running-git-filter-branch)
 
@@ -453,6 +455,18 @@ git filter-branch --prune-empty --subdirectory-filter FOLDER-NAME  BRANCH-NAME
 
 ## way2 
 
+```
+
+#### Pruning history
+
+```bash
+# remove __debug.xlsx from all commit
+git filter-branch --index-filter 'rm -f __debug.xlsx' -- --all
+
+# use java tool https://rtyley.github.io/bfg-repo-cleaner/
+bfg -D '{run_StellNet*}' .git
+bfg --delete-folders 'Anton' .git # 'Anton' is the folder name, not the the path
+git reflog expire --expire=now --all && git gc --prune=now --aggressive
 ```
 
 #### Refs & Reflog
