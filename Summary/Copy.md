@@ -1,3 +1,23 @@
+## 08/11/2018
+
+He had told friends that those with arts on their walls were companies cared more about balance-sheet maneuvering than finding new oil and gas deposit. They were fakers of the business, he had said.
+-- Fracker
+
+
+## 06/29/2018
+
+On the advice of counsel, I respectfully decline to answer your question, based on my right under the Fifth Amendment to the United State Constitution
+-- Miss Sloane
+
+## 06/02/2018
+
+obstinate   执拗的
+ravenous   - extremely hungry
+methodical - orderly 有条理的 
+rascally - 调皮捣蛋的
+
+> The Frackers is the first book to tell the stories of the obstinate, ravenous, methodical and sometimes rascally oil executives of the recent boom ... Fast paced, densely interesting.
+
 ## 4/26/2018
 
 You can't hold tide with a broom
@@ -69,7 +89,7 @@ We use logical proofs to convince others of our conclusion.
 
 ## 5/20/2017
 
-Lobbying is about foresight. About anticipating 
+Lobbying is about foresight. About anticipating   
 
 ## 5/4/2017
 
