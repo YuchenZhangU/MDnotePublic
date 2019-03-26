@@ -1,6 +1,5 @@
 ## Oxy slides
 
-
 [2017-wells-fargo-west-coast-energy-conference-by-Richard Jackson](https://seekingalpha.com/article/4083320-occidental-petroleum-corporation-oxy-presents-2017-wells-fargo-west-coast-energy-conference)
 
 [Wood Machenzie Report](https://www.woodmac.com/reports/upstream-oil-and-gas-mukhaizna-block-53-4316592)
