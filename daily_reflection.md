@@ -52,7 +52,9 @@ To-do
 
 - [x] Think about my own image and girl image.
 - [x] blue cross reserve a doctor
-- [ ] write doctor appointment message
+- [x] write doctor appointment message
+Kidney pain after lower back exercise. Will have kidney pain on both side after using lower back muscle and somtimes it will cause diarrhea. The pain is chronic (has been 3 year) and will be intensified when do lower back exercise.
+I do not take supplements, do not use sleep aid, I do regular execise (2-4 hrs a week. I drink alcohol twice a month. I do not smoke)
 - [] oxy work: reply to Dustin; read the sign-off
 
 
