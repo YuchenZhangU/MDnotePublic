@@ -1,41 +1,65 @@
-5 afternoon - 6 lose time
-7 - 5 strict time
+## 6/9/2019
 
-## Principals
-a. Healthy
-    + Gym (1,3) - basketball
-    + Run (3, 6)
-    + lu correctly (1)
-    + PC (drive in the morning)
-    + Sleep before 9:30
-    + do new thing every week
-b. Logic and knowledge
-    + books and paper reading
-    + CFA
-c. Hobbies
-    + sing and music
-d. People Skill
-    + go rice study on 2,4,7
-e. Money
-    + house hunting
-    + reading
-f. career
-    + 
+### Bruton
 
-## Criteria
+Hey Mr. Bruton, this is Yuchen. I connected with you a couple of months ago on linkedin Career Advice. I'm currently a Analytics Engineer at Occidental. I have been worked for Oxy a little bit over a year. I have been work on reservoir simulation - the creating and the use of simulation tools. The tool generates operational recommendations and helps reservoir management team making decision. Technical speaking, it's a reservoir simulation and production optimization tool. For example, we give suggestions to a steam flood field on how to allocate steam.
 
-what is a good thing?
-1. Form a regular behavior that honors the principal(s).
-2. Make move on create new pricipal.
-3. Know why I'm happy?
+My responsibility is to maintain and improve the tool based on the reservoir engineer's requirements. 
+I build the reservoir model and support reservoir management team directly if BU is short of engineer. If a BU has resource, I need travel to the BU and train users. I also worked with houston based user interfact development guiding them on how to creating a web app that is easilier to use. In short, the main job is to code and maintain a simulator and the algorithms around the simulator and to support the RMT use the tool.
 
-what is a bad thing?
-1. Break a regular behaviour that hornors the principal
-2. Gives up on a principal
-3. Did the thing that without reajuesting plan
+I do have the following concerns
+- The job I did is very technical. My team is called data analytics and my title is analytics engineer. However, I'm doing the reservoir simulation engineers's job. I do not enjoy the reality that I'm actually doing reservoir simulation job and not be treated as reservoir. 
+- I did enjoy the travel to business unit when I train people there to use the tool we create becasue I also learn a lot operational knowledge from them. I would like to develop myself as a reservoir engineer with data analytics. However, I feel lack of guidance. I do not have a mentor in that area.
 
-What is not a good thing?
-Something luck.
+
+### James
+
+- I want to develop as a reservoir engineer with data analytics skills. How would I achieve my goals? Do you have any recommendations? I would like a community.
+- 
+
+Hey James, thank you for come and meet with me.
+In short, the question I'd like to ask is how can I be a good reservoir engineer.
+My daily job now is to maintain and improve the tool based on the reservoir engineer's requirements. 
+I build the reservoir model and support reservoir management team directly if BU is short of engineer. If a BU has resource, I need travel to the BU and train users. 
+I also worked with houston based user interfact development guiding them on how to creating a web app that is easilier to use. In short, the main job is to code and maintain a simulator and the algorithms around the simulator and to support the RMT use the tool.
+reservoir engineer with data analytics skills.
+
+### Ed
+
+I appreciate the knowledge I learn during this project. I gain a little bit operational knowledge. I now do some reservoir engineer job. Is it good for my career development？My goal is develop as a reservoir engineer with data analytics skills.
+
+### Shun
+
+刘老师，您好。 
+
+
+### Reza
+
+
+Take one day vacation on 20th to a event for young professional.
+Half day off on 24th to see doctor.
+I have a concern maybe I should talk to Don first. Sounds more like a reservior simulation engineer.
+
+### Don
+
+I have a concern. For DOL, it maybe sound more like a reservior simulation engineer.
+
+## 6/9/2019
+
+- [x] 确定YP策略
+    + [x] how to speak with Bruton, James, Ed and Liu
+    + [x] research ways to find mentor
+    + [] read information for YP
+- [] 确定技术提升路线
+    + read private information first
+    + focus on a certain area
+        + steam flood
+        + co2
+        + unconventional
+    + reservoir engineer
+- [x] prepare talk with Reza and HR
+- [] 确定一个可以询问的律师
+    + [] 职位A，用了职位B的job description
 
 
 ## 6/3/2019
@@ -53,7 +77,7 @@ To-do
 - [x] Think about my own image and girl image.
 - [x] blue cross reserve a doctor
 - [x] write doctor appointment message
-Kidney pain after lower back exercise. Will have kidney pain on both side after using lower back muscle and somtimes it will cause diarrhea. The pain is chronic (has been 3 year) and will be intensified when do lower back exercise.
+Kidney pain after lower back exercise. Will have kidney pain on both side after using lower back muscle and sometimes it will cause diarrhea. The pain is chronic (has been 3 year) and will be intensified when do lower back exercise.
 I do not take supplements, do not use sleep aid, I do regular execise (2-4 hrs a week. I drink alcohol twice a month. I do not smoke)
 - [] oxy work: reply to Dustin; read the sign-off
 
