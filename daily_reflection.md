@@ -14,8 +14,17 @@ I do have the following concerns
 
 ### James
 
-- I want to develop as a reservoir engineer with data analytics skills. How would I achieve my goals? Do you have any recommendations? I would like a community.
-- 
+- Q1: I want to development some reservoir engineering skills. How would I start?
+    + I want to develop as a reservoir engineer with data analytics skills. How would I achieve my goals? Do you have any recommendations? I would like a community.
+- Q2: As a reservoir engineer, you give suggestions to BU based on reservoir model. Do you have any methodology? Where is your confidence that you tell RMT that you should reduce injection for a certain well.
+- Daily works
+    + Write and maintain the code. Improve the simulator and history match tools.
+    + I build reservoir model from field data. History match the model and support RMT
+    + I need to make UI developer understand what we are doing and give requirements for UI develpment
+    + Try BU people to use the tools.
+    + Wrtie techinque documentation
+    + 10-12 hours meeting for Agile development.
+
 
 Hey James, thank you for come and meet with me.
 In short, the question I'd like to ask is how can I be a good reservoir engineer.
