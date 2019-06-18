@@ -30,8 +30,6 @@ I appreciate the knowledge I learn during this project. I gain a little bit oper
 
 ### Shun
 
-刘老师，您好。 
-
 
 ### Reza
 
@@ -44,12 +42,41 @@ I have a concern maybe I should talk to Don first. Sounds more like a reservior 
 
 I have a concern. For DOL, it maybe sound more like a reservior simulation engineer.
 
+## 6/11/2019
+
+Good:
+act quick on the PERM thing.
+
+Bad:
+Spend to much time on wechat/waiting wechat response. Didn't calm down and think about strategy. 
+
+Reflect:
+The girl wants pride. That's what she currently what she need from me. I need to think of other things that attract her.
+What I need from her? I think she is discipline and self motivated which is kind of attractive to me. 
+
+Better:
+Think more about what is the target/milestones. On work and relationship.
+
+Work
+- Date clear. Do statistics if there is data issue. Quantify the data issue.
+- Get reservoir parameter.
+- Run forward model. Resolve any convergence issue.
+- Sensitivity to figure out the simulation parameter.
+- run history match
+- select the best case
+- Deal with things that change dynamically
+    + format
+    + model
+    + production history 
+    + constraints
+
+
 ## 6/9/2019
 
 - [x] 确定YP策略
     + [x] how to speak with Bruton, James, Ed and Liu
     + [x] research ways to find mentor
-    + [] read information for YP
+    + [x] read information for YP
 - [] 确定技术提升路线
     + read private information first
     + focus on a certain area
